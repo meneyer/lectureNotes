@@ -1,0 +1,329 @@
+.wrapper{
+    margin: 50px;
+}
+
+.face{
+    width: 200px;
+    height:115px;
+    border:solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 50%;
+    margin: 75px;
+}
+
+.centerEye{
+    width:50px;
+    height:30px;
+    border: solid 2px #ABC13A;
+    border-radius: 55%;
+    z-index: 1;
+    position: relative;
+    left: 75px;
+    top: 8px;
+    background-color: white;
+}
+
+.leftEye{
+    width: 50px;
+    height: 30px;
+    border: solid 2px #ABC13A;
+    border-radius: 55%;
+    position: relative;
+    left: 18px;
+    top: -15px;
+    background-color: white;
+    -webkit-transform: rotate(-27deg)
+}
+
+.rightEye{
+    width: 50px;
+    height: 30px;
+    border: solid 2px #ABC13A;
+    border-radius: 55%;
+    position: relative;
+    left: 131px;
+    top: -49px;
+    background-color: white;
+    -webkit-transform: rotate(27deg)
+}
+
+#centerPupil{
+    width: 13px;
+    height: 13px;
+    border: solid 1px black;
+    border-radius: 100%;
+    position: relative;
+    left: 18px;
+    top: 11px;
+    background-color: black;
+}
+
+#leftPupil{
+    width: 13px;
+    height: 13px;
+    border: solid 1px black;
+    border-radius: 100%;
+    position: relative;
+    left: 18px;
+    top: 11px;
+    background-color: black;
+}
+
+#rightPupil{
+    width: 13px;
+    height: 13px;
+    border: solid 1px black;
+    border-radius: 100%;
+    position: relative;
+    left: 18px;
+    top: 11px;
+    background-color: black;
+}
+
+.mouth{
+    width: 50px;
+    height: 30px;
+    border: solid 2px rgb(87, 86, 86);
+    border-radius: 75%;
+    position: relative;
+    left: 73px;
+    bottom: 40px;
+    background-color: rgb(87, 86, 86);
+}
+
+.antenna{
+    width:4px;
+    height: 70px;
+    border: solid 2px #ABC13A;
+    border-radius: 60px 60px 60px 60px;
+    position: relative;
+    left: 99px;
+    bottom: 210px;
+    background-color: #ABC13A;
+}
+
+#antennaTop{
+    width: 25px;
+    height: 25px;
+    border: solid 2px #ABC13A;
+    border-radius: 100%;
+    position: relative;
+    left: -12px;
+    top: -10px;
+    background-color: #ABC13A;
+}
+
+.body{
+    width: 200px;
+    height: 300px;
+    border: solid 2px #3383C7;
+    background-color: #3383C7;
+    border-radius:15%;
+    position: relative;
+    left: 76px;
+    bottom: 80px;
+}
+
+.collar{
+    width:180px;
+    height: 20px;
+    border: solid 2px #87539B;
+    background-color: #87539B;
+    border-radius: 50%;
+    position: relative;
+    left: 7px;
+    bottom: 8px;
+}
+
+#orangePlanet{
+    width: 50px;
+    height: 50px;
+    border: solid 8px orange;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+    left: 74px;
+    top: 20px;
+}
+
+#yellowRing{
+    width: 100px;
+    height: 13px;
+    border: solid 6px orange;
+    background-color: none;
+    border-radius: 50%;
+    position: relative;
+    -webkit-transform: rotate(-27deg);
+    left:50px;
+    bottom: 25px;
+}
+
+#belt{
+    width: 200px;
+    height: 20px;
+    border: solid 2px #182A55;
+    background-color: #182A55;
+    border-radius: 10%;
+    position: relative;
+    left: -2px;
+    top: 30px;
+}
+
+#beltBuckle{
+    width: 40px;
+    height: 25px;
+    border: solid 2px black;
+    background-color: #182A55;
+    border-radius: 10%;
+    position: relative;
+    left: 80px;
+    top: 3px;
+}
+
+#legSeparator{
+    width: 4px;
+    height: 80px;
+    border: none;
+    background-color: #182A55;
+    border-radius: 10%;
+    position: relative;
+    left: 100px;
+    top: 54px;
+}
+
+.leftShoe{
+    width: 120px;
+    height: 40px;
+    border: solid 2px #182A55;
+    border-radius: 25%;
+    background-color: #182A55;
+    position: relative;
+    right:24px;
+    top: 46px
+}
+
+.rightShoe{
+    width: 120px;
+    height: 40px;
+    border: solid 2px #182A55;
+    border-radius: 25%;
+    background-color: #182A55;
+    position: relative;
+    left:104px;
+    top: 2px
+}
+
+.leftArm{
+    width: 125px;
+    height: 50px;
+    border: solid 2px #3383C7;
+    background-color: #3383C7;
+    border-radius: 15%;
+    position: relative;
+    right: 73px;
+    bottom: 292px;
+    transform: rotate(-50deg);
+}
+.rightArm{
+    width: 125px;
+    height: 53px;
+    border: solid 2px #3383C7;
+    background-color: #3383C7;
+    border-radius: 15%;
+    position: relative;
+    left: 146px;
+    bottom: 347px;
+    transform: rotate(50deg);
+}
+
+.leftHand{
+    width: 50px;
+    height: 50px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius:50%;
+    position: relative;
+    right: 90px;
+    bottom: 340px;
+}
+
+.rightHand{
+    width: 50px;
+    height: 50px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius:50%;
+    position: relative;
+    left: 236px;
+    bottom: 393px;
+}
+
+#leftThumb{
+    width: 10px;
+    height: 50px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    -webkit-transform: rotate(-50deg);
+}
+
+#leftMiddle{
+    width: 10px;
+    height: 60px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    left: 16px;
+    top: -42px;
+}
+
+#leftPinky{
+    width: 10px;
+    height: 60px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    left: -4px;
+    bottom:115px;
+    -webkit-transform: rotate(40deg);
+}
+
+#rightThumb{
+    width: 10px;
+    height: 50px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    right: 9px;
+    top: 10px;
+    -webkit-transform: rotate(50deg);
+}
+
+#rightMiddle{
+    width: 10px;
+    height: 60px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    left: 16px;
+    top: -42px;
+}
+
+#rightPinky{
+    width: 10px;
+    height: 60px;
+    border: solid 2px #ABC13A;
+    background-color: #ABC13A;
+    border-radius: 40%;
+    position: relative;
+    left: 40px;
+    bottom:115px;
+    -webkit-transform: rotate(-40deg);
+}

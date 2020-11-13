@@ -1,0 +1,29 @@
+.nav{
+    background-color:grey;
+    color: white;
+    display: flex;
+    justify-content: space-evenly
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(110deg, rgb(39, 39, 39) 15%, rgb(150, 79, 112) 95%)
+}
+
+.logIn{
+    text-align: center;
+    width: 25%;
+    border: solid 2px lightgray;
+    color: lightgray;
+    margin: auto;
+}
+
+h4{
+    background-color: #cd5c5c;
+    }
