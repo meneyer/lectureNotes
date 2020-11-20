@@ -69,15 +69,10 @@ console.log(Object.keys(fellowshipOfTheRing));//this gave me members, purpose, f
 
 // console.log(fellowshipOfTheRing.members.Boromir)
 
-for (members in fellowshipOfTheRing){
-    console.log(members);
-    console.log(fellowshipOfTheRing.members);     
-}
-
-// for (members in fellowshipOfTheRing.members.hasOwnProperty(key)){
-//     var obj = fellowshipOfTheRing.members[key];
+// for (members in fellowshipOfTheRing){
 //     console.log(members);
-
+//     console.log(fellowshipOfTheRing.members);     
+// }
 
 for (members in fellowshipOfTheRing.members){
     if(members.startsWith("A") || members.startsWith("E") || members.startsWith ("I") || members.startsWith("O") || members.startsWith("U")){
@@ -86,3 +81,31 @@ for (members in fellowshipOfTheRing.members){
         console.log(`${members}'s name does not begin with a vowel`)
     }
 }
+
+//INSTRUCTOR ANSWER
+//BRONZE
+for (member in fellowshipOfTheRing.members){
+    console.log(member);
+}
+
+//SILVER
+for (member in fellowshipOfTheRing.members){
+    if(member[0] !=="A" && member[0] !=="E" && member[0] !=="I" && member[0] !=="O" && member[0] !=="U"){
+        console.log(`${member}'s name does not begin with a vowel`)
+    } else {
+        console.log(`${member}'s name begins with a vowel`)
+    }
+}       
+
+//      || (pipes/or operator) checks for one of the conditions to be true
+//      && (and operator) checks for all the conditions to be true
+//  this is why my way and the other way both worked
+
+//GOLD
+let arr = []
+for (member in fellowshipOfTheRing.members){
+    if(member[0] !=="A" && member[0] !=="E" && member[0] !=="I" && member[0] !=="O" && member[0] !=="U"){
+      arr.push(member);
+    } 
+} 
+console.log(arr);   //Result: Only one left out in the answer is Aragon
