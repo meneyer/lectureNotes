@@ -25,3 +25,4 @@ if(age>=21){
 } else {
     console.log('Cannot purchase');
 }
+

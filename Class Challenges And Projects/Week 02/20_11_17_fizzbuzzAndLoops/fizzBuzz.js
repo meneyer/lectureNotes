@@ -24,7 +24,6 @@ let FB=150
 //     console.log("Fizz Buzz")
 // }                                    //This ends at the first Fizz, so we need to flip the order around so we get the right answer
 
-
 if(FB%3==0 && FB%5==0){
     console.log("Fizz Buzz")
 } else if (FB%3==0){
@@ -57,3 +56,4 @@ switch(true){                       //if the statement is TRUE, we want to see F
 FB%3==0 == 150? console.log("Fizz"):
 FB%5==0 == 150 ? console.log("Buzz"):
 console.log("this is the wrong answer")
+
