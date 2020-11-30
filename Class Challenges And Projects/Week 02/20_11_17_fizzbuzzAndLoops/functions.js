@@ -74,7 +74,7 @@ ARROW FUNCTIONS
 
 -There are two types of arrow functions: concise body and block body
     -The return happens automatically with a concise body arrow function
-    -The return does NOT happen automattically with a block body arrow function.
+    -The return does NOT happen automatically with a block body arrow function.
 */
 
 //CONCISE BODY ARROW FUNCTION -- DOES NOT USE {} -- DOES NOT REQUIRE "RETURN" KEYWORD
@@ -86,9 +86,12 @@ let fullName = nameJoiner("Donovan", "Triplett");
 console.log(fullName);          //Return happens automatically in concise body arrow function - answer Donovan Triplett
 
 //BLOCK BODY ARROW FUNCTION -- USES {} -- REQUIRES "RETURN" KEYWORD
-let speak = (name) => {
-    console.log(`${name} goes wooooof`)
+let dog = (name) => {
+    return name;
 }
+
+let name = dog("Luna");
+console.log(`${name} goes wooooof`)
 
 let nameJoiner = (first, last) => {
     return `${first} ${last}`;
