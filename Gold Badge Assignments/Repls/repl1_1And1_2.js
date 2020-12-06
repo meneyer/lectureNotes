@@ -7,17 +7,19 @@ REPL 1.1
 3. Inside of the function, write a conditional that checks if the number is even or odd. If the number is even, console.log 'the number is even'. If the number is odd, console.log 'the number is odd'.
 */
 
-function evenOrOdd(){
-    for (let i=0; i<=10; i++){
-        console.log(i)
-        if (i%2==1){
-        console.log("the number is odd")
-        } else if (i%2==0){
-        console.log ("the number is even")
-        }
+for (let i = 0; i <=10; i++){
+    evenOrOdd (i);
+}
+
+function evenOrOdd(number){
+    console.log(number);
+    if (number%2===0){
+        console.log ("the number is even");
+    } else {
+        console.log("the number is odd");
     }
 }
-evenOrOdd()
+
 
 /*
 REPL 1.2

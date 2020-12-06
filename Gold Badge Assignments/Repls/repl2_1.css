@@ -1,0 +1,7 @@
+img{
+    border: solid 2px black;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
