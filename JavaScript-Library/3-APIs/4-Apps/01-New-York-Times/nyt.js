@@ -53,7 +53,7 @@ function fetchResults(e) {     //(e) is the event handling function - allows you
 }
 
 function displayResults(json){  //creating the displayResults function to pull in the json result information
-    while (section.firstChild){  //checks to see if the section element has any child elements - if yes, then the section needs removed so the page shows the new articles when next and previous are clicked
+    while (section.firstChild){  //checks to see if the section element has any child elements - if yes, then the section needs removed so the page shows the new articles when next and previous are clicked - this is needed as the prevent default is listed above which makes the previous things not go away.
         section.removeChild(section.firstChild);  //removing this makes the whole thing not work - the whole page becomes unresponsive
     }
     let articles = json.response.docs;  //pulls in the json, the articles, and the documents
