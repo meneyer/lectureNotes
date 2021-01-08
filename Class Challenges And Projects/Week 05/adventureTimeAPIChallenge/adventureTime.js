@@ -84,7 +84,7 @@ fetch(url)
 .then(function(result){
     return result.json()
 })
-.then(json => displayResults(json));       //step 2 (fetch to here), step 3 part 2 chance console.log to displayResults
+.then(json => displayResults(json));       //step 2 (fetch to here), step 3 part 2 change console.log to displayResults
 
 function displayResults(quote){
     console.log(quote)                      //step 3, part 2
@@ -99,7 +99,7 @@ function displayResults(quote){
 
     let character = quote.split(":")[0];
 
-    if (character === "Finn"){                                
+    if (character === "Finn"){                         
         img.src = charPic.finn
     } else if (character === "Tart Toter"){
         img.src = charPic.tartToter

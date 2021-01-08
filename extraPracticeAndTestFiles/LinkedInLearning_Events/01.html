@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events01</title>
+    <link rel="stylesheet" href="01styles.css">
+</head>
+<body>
+    <ul id="grid">
+        <li><img src="01Images/ylw.gif" alt="yellow"></li>
+        <li><img src="01Images/org.gif" alt="orange"></li>
+        <li><img src="01Images/ppl.gif" alt="purple"></li>
+        <li><img src="01Images/blu.gif" alt="blue"></li>
+        <li><img src="01Images/pnk.gif" alt="pink" id="pink"></li>
+        <!--THIS IS HOW YOU CAN DO IT IN THE HTML <li><img src="01Images/pnk.gif" onclick="alert ('pushed pink')"></li> -->
+        <li><img src="01Images/grn.gif" alt="green"></li>
+        <li><img src="01Images/ygr.gif" alt="yellow-green"></li>
+        <li><img src="01Images/gry.gif" alt="grey"></li>
+        <li><img src="01Images/red.gif" alt="red"></li>       
+    </ul>
+
+<script>
+    // 2nd option on how you can get the same alert
+    // document.getElementById('pink').onclick=function(){
+    //     alert('clicked on pink')
+    // }
+
+    //JS way to add event listener of a single element
+    // document.getElementById('pink').addEventListener ('click', function(){
+    //     alert('clicked on pink')
+    // }, false)
+
+    //another way to write the above
+    // document.getElementById('pink').addEventListener ('click', function(e){
+    //     console.log(e)
+    // }, false)
+
+    //uses event propagation to check for any events happening in the ul
+    // document.getElementById('grid').addEventListener ('click', function(e){
+    //     console.log(e)
+    // }, false)
+
+    //changes the console log to show the name of the color was clicked on
+    document.getElementById('grid').addEventListener ('click', function(e){
+        console.log(e.toElement.alt)
+    }, false)
+    
+</script>
+</body>
+
+</html>

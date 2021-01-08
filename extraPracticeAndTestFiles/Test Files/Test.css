@@ -1,0 +1,138 @@
+.wrapper{
+    margin: 5px 5px 5px 5px;
+    padding: 20px 0px 0px 0px;
+    overflow-x: hidden;     
+}
+
+body{
+     background-repeat:no-repeat;
+    background-size: cover;   
+    background-image: url(https://images.unsplash.com/photo-1518197844174-fc473cbbfd16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1055&q=80);   
+}
+
+header{
+    text-align: center;
+    font-family: lobster;
+    color:white;
+    background-color: rgb(132, 104, 62);
+    padding: 15px 0px 15px 0px;
+}
+
+.topRow{
+    height: 530px;
+}
+
+.bottomRow{
+    height: 680px;
+}
+
+h1{
+    font-size: 80px;
+
+}
+
+h2{
+    font-size: 45px;
+}
+
+a{
+    /* color: white; */
+    font-size: 16px;
+    float: right;
+    position: relative;
+    top: 3px;
+    font-style: italic;
+}
+
+h4{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    top: 3px;
+    font-style: italic;
+}
+
+#pictureFrame1{
+    z-index: 1;
+    float: right;
+}
+
+#image1{
+    z-index: 2;
+    position: relative;
+    bottom: 365px;
+    left: 75px;
+}
+
+#pictureFrame2{
+    z-index: 1;    
+}
+
+.image2{
+    z-index: 2;
+    position: relative;
+    bottom: 370px;
+    left: 65px
+}
+
+#pictureFrame3{
+    z-index: 1;
+    float: right;
+    /* position: relative;
+    top: 150px; */
+}
+
+#image3{
+    z-index: 2;
+    position: relative;
+    bottom: 220px;
+    right: 5px;
+    
+}
+
+#pictureFrame4{
+    z-index: 1;
+    /* position: relative;
+    top: 130px; */
+}
+
+.image4{
+    z-index: 2;
+    position: relative;
+    bottom: 275px;
+    left: 50px
+}
+
+/* #pictureFrame5{
+    z-index: 1;
+} */
+
+/* #image5{
+    z-index: 2;
+    position: relative;
+    bottom: 225px;
+    left: 64px
+} */
+
+#pictureFrame6{
+    z-index: 1; 
+    /* position: relative;
+    left: 50px; */
+}
+
+#image6{
+    z-index: 2;
+    position: relative;
+    bottom: 555px;
+    left: 77px;
+
+}
+
+footer{
+    text-align: center;
+    font-family: lobster;
+    color:white;
+    background-color: rgb(132, 104, 62);
+    padding: 15px 0px 15px 0px;
+}

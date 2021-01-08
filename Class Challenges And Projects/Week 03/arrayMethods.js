@@ -113,7 +113,7 @@ let shoppingList = ["celery", "limes", "lemons", "grenadine", "oranges"];
 let foundIndex = shoppingList.findIndex(item => item.startsWith("g"));
 console.log(foundIndex);                //3 - aka the position of the grenadine
 
-//Array.every() - check if all elements in an array pass a test given as a function.  If there is 1 element that returns a false value, the function returns falst and does not check the rest of the elements.
+//Array.every() - check if all elements in an array pass a test given as a function.  If there is 1 element that returns a false value, the function returns false and does not check the rest of the elements.
 let shoppingList = ["celery", "limes", "lemons", "grenadine", "oranges"];
 console.log(shoppingList.every(item => item.length > 1));           //true as all of the strings are greater than one
 console.log(shoppingList.every(item => item.length > 7));          //false as there some items that are not greater than 7
