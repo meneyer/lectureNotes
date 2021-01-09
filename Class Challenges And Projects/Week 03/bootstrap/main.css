@@ -1,0 +1,29 @@
+h1 {
+    padding-top: 2em;
+}
+
+.btn-info{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    background-color: aquamarine;
+    border-color: purple;
+    border-width: .25em;
+    border-radius: 10%;
+}
+
+.list-group-flush{
+    text-align: center;
+}
+
+.cardThree{
+    text-align: center;
+    background-color:#E8733B;
+    color: white;
+}
+
+.accordion .card-body img{
+    height: auto;
+    width: 100%;
+  }
