@@ -1,0 +1,4 @@
+open app.js
+nodemon -- runs the code (in the terminal: "....05-node-server/server> nodemon)
+Cntl + C -- quits the server
+rs -- restarts the server
