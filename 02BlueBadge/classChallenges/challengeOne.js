@@ -18,6 +18,10 @@ The filter() method calls a provided callback function once for each element in 
 // .FOREACH() AND .PUSH()
 // Challenge: write a function that uses the Array.prototype.forEach() & the Array.prototype.push() methods within it. Using the forEach method, loop over all of the presidents from our presidents array. Then, push the president's last name and number of years they lived to a new array as individual objects containing key/value pairs of each presidents last name and age. Keep in mind that some presidents are still alive. Then, return the new array from the function.
 
+// The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+
+// The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
+
 // The forEach() method is an Array method that we can use to execute a provided callback function once on each element in an array. Think of forEach() as a loop. Both allow you to loop over data.
 
 // The push() method adds one or more elements to the end of an array and returns the new length of the array.
@@ -78,14 +82,60 @@ const presidents = [
 // let presidentBirthYear = presidents.filter(year => year>=1900);
 // console.log(presidentBirthYear)
 
-const year = presidents.filter(birthYear => birthYear.year>1900);
-console.log(year)
+// const year = presidents.filter(birthYear => birthYear.year>1900);
+// console.log(year)
 
 //CHALLENGE TWO
 
-const fullNames = presidents.map(president => (
-    `${president.first} ${president.last}`
-));
-console.log(fullNames)
+// const fullNames = presidents.map(president => (
+//     `${president.first} ${president.last}`
+// ));
+// console.log(fullNames)
 
 //CHALLENGE THREE
+
+// let fn = () => {
+//   let copy = [];
+
+  // for(let i = 0; i < presidents.length; i++) {
+  //   // console.log(presidents[i]);
+  //   copy.push({
+  //     last: presidents[i].last,
+  //     yearBorn: presidents[i].year
+  //   });
+  // }
+
+//   for (president of presidents) {
+//     copy.push({
+//       last: president.last,
+//       yearBorn: president.year,
+//     });
+//   }
+//   return copy;
+// };
+
+// let newArr = fn();
+// console.log(newArr);
+
+fn = () => {
+  let copy = [];
+
+  presidents.forEach((president) => {
+    let age;
+    if (president.passed === undefined) {
+      age = 2020 - president.year;
+    } else {
+      age = president.passed - president.year;
+    }
+
+    copy.push({
+      last: president.last,
+      yearsAlive: age,
+    });
+  });
+  // console.log(copy);
+  return copy;
+};
+
+let newArr = fn();
+console.log(newArr);

@@ -2,3 +2,5 @@ open app.js
 nodemon -- runs the code (in the terminal: "....05-node-server/server> nodemon)
 Cntl + C -- quits the server
 rs -- restarts the server
+
+when opening a downloaded git repository, you may need to run "npm update" or "npm install" in case there are any missing dependencies
