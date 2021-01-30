@@ -2,7 +2,7 @@
 
 const Sequelize = require('sequelize');
 
-//Option 1: Passing paramets separately
+//Option 1: Passing parameters separately
 
 // const sequelize = new Sequelize('database', 'username', 'password', {
 const sequelize = new Sequelize('journal-walkthrough', 'postgres', 'password', {
